@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #07200ddf;
+            color: #011206;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        
+        .ss {
+            color: gray;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .item {
+            background-color: #cdd5ccf1;
+            border: 2px solid #020400;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(19, 1, 1, 0.711);
+        }
+        
+        .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .form-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            border: 2px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #051c09;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center; padding: 1rem; color: white;">Courses</h1>
+    </header>
+
+    <div class="container">
+        <div class="item">
+            <h3>Portrait Drawing</h3>
+            <img src="r3.jpg" alt="Placeholder Image 1">
+        </div>
+        <div class="item">
+            <h3>Oil Paintings</h3>
+            <img src="r2.jpg" alt="Placeholder Image 2">
+        </div>
+        <div class="item">
+            <h3>Acrylic Paintings</h3>
+            <img src="r4.jpg" alt="Placeholder Image 3">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2>To Register in Our Courses</h2>
+        <form action="#">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Note:</label>
+            <textarea id="note" name="note" rows="4" placeholder="Please write your note" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="ss">
+        <button><a href="index.html" > Back</a> </button>
+    </div>
+</body>
+
+</html>
